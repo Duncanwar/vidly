@@ -1,9 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
-import { apiEndpoint } from "../utils/config.json";
 import http from "../utils/httpService";
 import jwtDecode from "jwt-decode";
 
-const apiUrl = apiEndpoint + "/auth";
+const apiUrl = "/auth";
 const tokenKey = "token";
 
 http.setJwt(getJwt());
